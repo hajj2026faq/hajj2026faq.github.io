@@ -1,565 +1,366 @@
+<!-- Version: 1.0 - Date: 08-08-2025 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hajj 2026 - FAQ | Shah Hajj & Umrah Service</title>
-<style>
-  /* Reset & base */
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f7fa;
-    margin: 0; padding: 40px;
-    color: #333;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hajj 2026 - FAQ | Shah Hajj & Umrah Service</title>
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body>
 
-  h1 {
-    text-align: center;
-    font-weight: 700;
-    color: #222;
-  }
+    <h1>Hajj 2026 - Shah Hajj & Umrah Service</h1>
+    <h2>Frequently Asked Questions</h2>
+    <p>
+      <i>
+        Version: 1.0 - Published: 08-08-2025
+        <br>Previous Version: <a href="#">0.0</a>
+      </i>
+    </p>
 
-   h2 {
-    text-align: center;
-    margin-bottom: 60px;
-    font-weight: 700;
-    color: #222;
-  }
-
-  /* Tabs container */
-  .tab-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    gap: 20px;
-  }
-  .tab-buttons button {
-    background: #e0e7ff;
-    border: none;
-    padding: 12px 28px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #4f46e5;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 6px rgba(79,70,229,0.2);
-  }
-  .tab-buttons button:hover {
-    background: #c7d2fe;
-  }
-  .tab-buttons button.active {
-    background: #4f46e5;
-    color: white;
-    box-shadow: 0 6px 15px rgba(79,70,229,0.4);
-    transform: translateY(-2px);
-  }
-
-  /* Tab content */
-  .tab-content {
-    max-width: 1000px; /* updated max-width */
-    margin: 0 auto;
-    background: white;
-    border-radius: 12px;
-    padding: 30px 40px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  }
-  .tab-content:not(.active) {
-    display: none;
-  }
-
-  /* Section styling */
-  .section {
-    margin-bottom: 40px;
-  }
-  .section h3 {
-    font-size: 1.4rem;
-    border-bottom: 2px solid #4f46e5;
-    padding-bottom: 8px;
-    margin-bottom: 25px;
-    color: #4f46e5;
-  }
-
-  /* FAQ items */
-  .faq-item {
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background: #fafbff;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    overflow: hidden;
-    transition: box-shadow 0.3s;
-  }
-  .faq-item.open {
-    box-shadow: 0 4px 18px rgba(79,70,229,0.3);
-  }
-
-  .question {
-    padding: 15px 25px;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    user-select: none;
-    transition: background-color 0.3s;
-  }
-  .question:hover {
-    background-color: #e0e7ff;
-  }
-
-  /* Links inside questions */
-  .question a {
-    color: #4f46e5;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .question a:hover,
-  .question a:focus {
-    color: #3730a3;
-    outline: none;
-    text-decoration: underline;
-  }
-
-  /* Arrow icon */
-  .question::after {
-    content: "▼";
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 12px;
-    color: #4f46e5;
-    transition: transform 0.3s;
-  }
-  .faq-item.open .question::after {
-    transform: translateY(-50%) rotate(180deg);
-  }
-
-  .answer {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 25px;
-    background-color: #f9faff;
-    font-weight: 400;
-    color: #555;
-    line-height: 1.6;
-    transition: max-height 0.35s ease, padding 0.35s ease;
-  }
-  .faq-item.open .answer {
-    padding: 15px 25px 20px;
-    max-height: 500px; /* enough for most answers */
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    body {
-      padding: 20px 15px;
-    }
-    .tab-buttons {
-      flex-direction: column;
-      gap: 12px;
-      align-items: center;
-    }
-    .tab-buttons button {
-      width: 100%;
-      max-width: 300px;
-    }
-    .tab-content {
-      padding: 25px 20px;
-    }
-  }
-</style>
-</head>
-<body>
-
-<h1>Hajj 2026 - Shah Hajj & Umrah Service</h1>
-<h2>Frequently Asked Questions</h2>
-
-<div class="tab-buttons" role="tablist">
-  <button class="active" data-tab="tab1" role="tab" aria-selected="true" aria-controls="tab1">British Passport</button>
-  <button data-tab="tab2" role="tab" aria-selected="false" aria-controls="tab2">Bangladeshi Passport</button>
-</div>
-
-<div id="tab1" class="tab-content active" role="tabpanel" aria-labelledby="tab1">
-  <div class="section">
-    <h3>Initial Booking</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What is the earliest time I can book my Hajj package from the UK?</div>
-      <div class="answer">We already started our initial booking. You can do it as soon as possible.</div>
+    <div class="tab-buttons" role="tablist">
+      <button class="active" data-tab="tab1" role="tab" aria-selected="true" aria-controls="tab1">British Passport</button>
+      <button data-tab="tab2" role="tab" aria-selected="false" aria-controls="tab2">Bangladeshi Passport</button>
     </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What is the deadline of Hajj booking from UK?</div>
-      <div class="answer">There is no deadline at the moment. Once we get deadline, we will publish later</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How can I book Hajj & what is the process?</div>
-      <div class="answer">1. Complete the booking form using the link: 🔗<a href="https://forms.gle/wwXUFQ2C3kURhD859" target="_blank"> Click to Register Here</a> <br>
-                          2. Send a clear scan or photo of your valid passport via WhatsApp (scanned copy preferred). <br>
-                          3. Send a recent passport-size photograph via WhatsApp.
+
+    <div id="tab1" class="tab-content active" role="tabpanel" aria-labelledby="tab1">
+      <div class="section">
+        <h3>Initial Booking</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What is the earliest time I can book my Hajj package from the UK?</div>
+          <div class="answer">We already started our initial booking. You can do it as soon as possible.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What is the deadline of Hajj booking from UK?</div>
+          <div class="answer">There is no deadline at the moment. Once we get deadline, we will publish later</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How can I book Hajj & what is the process?</div>
+          <div class="answer">1. Complete the booking form using the link: 🔗<a href="https://forms.gle/wwXUFQ2C3kURhD859" target="_blank"> Click to Register Here</a> <br>
+                              2. Send a clear scan or photo of your valid passport via WhatsApp (scanned copy preferred). <br>
+                              3. Send a recent passport-size photograph via WhatsApp.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Is there a deposit required for initial booking? How much?</div>
+          <div class="answer">Yes, A non-refundable £100 are required for initial booking. Which will be admin cost.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Does receiving initial booking confirmation guarantee my place for Hajj?</div>
+          <div class="answer">No. only confirmation of Visa will guarantee your place for Hajj.</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Package & Price</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How much does a typical Hajj package cost from the UK?</div>
+          <div class="answer">The cost of a Hajj package can vary significantly depending on the type of package selected. Prices typically start from £6,500.
+            <br><br>
+            <b>Please note:</b> The final Hajj package details and pricing are subject to approval and updates from the Saudi Hajj Ministry. If you have made an initial booking with us, we will provide you with an update once the final Hajj package details are published.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Package Selection, Payment & Visa</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How to select package for hajj, and who will help to do?</div>
+          <div class="answer">Package selection is done through the Nusuk portal, an official online platform for Hajj bookings. Our dedicated IT team will assist you throughout the package selection process to help find the best available options. <br> <br>
+                              Please note that while our team will make every effort to secure a suitable package for you, availability depends on the Nusuk system, and we cannot guarantee a specific package until the booking is confirmed.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can packages be customized?</div>
+          <div class="answer">Generally, Hajj packages come as fixed options set by the operators or the Nusuk system. Therefore, packages are not customizable.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How do I add money (top-up) in the Nusuk portal for selecting a package?</div>
+          <div class="answer">You need to add money or top-up your balance through the Nusuk portal. If you require assistance, our dedicated IT team is available to guide you through the process step-by-step.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How much I have to add money (top-up)?</div>
+          <div class="answer">You must add the full cost of the selected Hajj package plus an additional 5% into their Nusuk e-wallet as a top-up.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">I don’t have card to add (top-up) money? Can I use my family member card?</div>
+          <div class="answer">Yes, you can. The same card will be use for refunding money, if your hajj is not confirmed.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">I only have cash. Would it be possible for you to pay with your card on my behalf? I’ll give you the cash.</div>
+          <div class="answer">No, you have to do it yourself.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Does the travel agency guarantee Hajj visas?</div>
+          <div class="answer">No, travel agencies cannot guarantee the issuance of Hajj visas.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What happens if the visa is denied or delayed?</div>
+          <div class="answer">If your visa is denied or delayed, you won’t be able to proceed with Hajj until the visa is confirmed. In the event of a visa rejection, a refund will be issued according to the refund policies set by the Saudi Hajj Ministry.</div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Flight Details</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Which airlines operate Hajj flights from the Bangladesh?</div>
+          <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I choose my own flight dates or times?</div>
+          <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Hotel Details</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What types of hotels are offered during Hajj packages? Are they near to Haram?</div>
+          <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How do hotel standards differ for UK vs Bangladesh packages?</div>
+          <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Hajj Guide</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Will there be a qualified Hajj guide accompanying the group?</div>
+          <div class="answer">Yes, a qualified and experienced Hajj guide will accompany the group throughout the pilgrimage to provide religious guidance, support, and help with rituals, ensuring a smooth and spiritually fulfilling experience.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What languages do the guides speak?</div>
+          <div class="answer">Our Hajj guides typically speak English. Additionally, depending on the group’s composition, the guide may speak your native language—such as Bengali—if it matches your country, to provide better assistance.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I request a private guide?</div>
+          <div class="answer">Private guides are generally not available as guides are assigned to groups to ensure smooth coordination and safety.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I select specific guide group or can I change to another group?</div>
+          <div class="answer">Generally, guide groups are assigned based on package and availability, and selecting a specific guide group or changing groups during Hajj is not allowed.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What help a guide can do in Hajj?</div>
+          <div class="answer">A guide can provide instructions and guidance on how to correctly perform the Hajj rituals. However, the guide does not have any responsibility or access to assist with food, transportation, or accommodation arrangements.</div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Common Question</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What vaccinations are required for Hajj?</div>
+          <div class="answer">Meningitis vaccination (A, C, W, Y strains) is mandatory.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can women travel alone for Hajj?</div>
+          <div class="answer">Yes, women can perform Hajj without a male guardian (mahram) under Saudi Arabia's current rules—but it’s recommended they travel in organized, trustworthy groups.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Will I get any Hajj lesson or training?</div>
+          <div class="answer">You will join a dedicated Hajj group for training and updates.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Is Qurbani included in the package? If not, what is the cost of Qurbani?</div>
+          <div class="answer">Qurbani not included in the package. Estimated cost is £175 for a goat and £200+ for a sheep. Assistance in arranging the sacrifice will be provided.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Are Hajj equipment such as Ihram, belt, and other essentials included in the package?</div>
+          <div class="answer">No, these are not included, you have to buy it separately?</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I extend my stay in Saudi Arabia after Hajj?</div>
+          <div class="answer">No, extension of stay is not allowed. All pilgrims must return as per the group’s scheduled itinerary.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I use my mobile phone during Hajj?</div>
+          <div class="answer">Yes, you can use your mobile phone during Hajj. However, it's advised to use it responsibly and avoid distractions during rituals. Also, ensure you have international roaming or a local SIM card for connectivity.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I use a different passport to apply for Hajj visa if I have dual nationality?</div>
+          <div class="answer">Generally, yes. However, you must apply through the country of the passport you choose, and follow that country’s Hajj quota and regulations.</div>
+        </div>
       </div>
     </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Is there a deposit required for initial booking? How much?</div>
-      <div class="answer">Yes, A non-refundable £100 are required for initial booking. Which will be admin cost.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Does receiving initial booking confirmation guarantee my place for Hajj?</div>
-      <div class="answer">No. only confirmation of Visa will guarantee your place for Hajj.</div>
-    </div>
-  </div>
 
-  <div class="section">
-    <h3>Package & Price</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How much does a typical Hajj package cost from the UK?</div>
-      <div class="answer">The cost of a Hajj package can vary significantly depending on the type of package selected. Prices typically start from £6,500.
-        <br><br>
-        <b>Please note:</b> The final Hajj package details and pricing are subject to approval and updates from the Saudi Hajj Ministry. If you have made an initial booking with us, we will provide you with an update once the final Hajj package details are published.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab2" class="tab-content" role="tabpanel" aria-labelledby="tab2">
+      <div class="section">
+        <h3>Initial Booking</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What is the earliest time I can book my Hajj package from the Bangladesh?</div>
+          <div class="answer">We already started our initial booking. You can do it as soon as possible.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What is the deadline of Hajj booking from Bangladesh?</div>
+          <div class="answer">The deadline of Hajj booking from Bangladesh is <b>12th September, 2025</b></div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How can I book Hajj & what is the process?</div>
+          <div class="answer">1. Complete the booking form using the link: 🔗<a href="https://forms.gle/wwXUFQ2C3kURhD859" target="_blank"> Click to Register Here</a> <br>
+                              2. Send a clear scan or photo of your valid Bangladeshi Passport / National ID Card / Bangladeshi Birth Certificate / UK Passport via WhatsApp (scanned copy preferred). <br>
+                              3. Send a recent passport-size photograph via WhatsApp. <br>
+                              4. Provide A Valid Bangladeshi Mobile Phone Number
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Is there a deposit required for initial booking? How much?</div>
+          <div class="answer">Yes, A non-refundable 30,000 TAKA are required for initial booking.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Does receiving initial booking confirmation guarantee my place for Hajj?</div>
+          <div class="answer">No. only confirmation of Visa will guarantee your place for Hajj.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I go Hajj by Bangladeshi passport from UK?</div>
+          <div class="answer">There are some doubts about the option. Once final instruction will come from Saudi Hajj Ministry, we will Give you update</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">I am intended to go Hajj from Bangladesh, I don’t have Bangladeshi Passport, what can I do?</div>
+          <div class="answer">You can do your initial booking by (Bangladeshi Passport / National ID Card / Bangladeshi Birth Certificate / UK Passport) any document. As the Bangladeshi passport is mandatory to go Hajj from Bangladesh. We will suggest, please apply for it as soon as possible.</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Package & Price</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How much does a typical Hajj package cost from the Bangladesh?</div>
+          <div class="answer">Costs vary widely depending on the package type. The approximate package price is below. The price is subject to change.
+            <br><br>
+            1. Economy: 650000 BD TK <br>
+            2. Standard: 750000 BD TK <br>
+            3. Deluxe: 800000 BD TK <br>
+            4. Luxury: 750000 BD TK <br>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Package Selection, Payment & Visa</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can packages be customized?</div>
+          <div class="answer">Packages are not customizable.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Does the travel agency guarantee Hajj visas?</div>
+          <div class="answer">No, travel agencies cannot guarantee the issuance of Hajj visas.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What happens if the visa is denied or delayed?</div>
+          <div class="answer">If your visa is denied or delayed, you won’t be able to proceed with Hajj until the visa is confirmed. In the event of a visa rejection, a refund will be issued according to the refund policies set by the Saudi Hajj Ministry.</div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Flight Details</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Which airlines operate Hajj flights from the UK?</div>
+          <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I choose my own flight dates or times?</div>
+          <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Hotel Details</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What types of hotels are offered during Hajj packages? Are they near to Haram?</div>
+          <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">How do hotel standards differ for UK vs Bangladesh packages?</div>
+          <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Hajj Guide</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Will there be a qualified Hajj guide accompanying the group?</div>
+          <div class="answer">Yes, a qualified and experienced Hajj guide will accompany the group throughout the pilgrimage to provide religious guidance, support, and help with rituals, ensuring a smooth and spiritually fulfilling experience.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What languages do the guides speak?</div>
+          <div class="answer">Our Hajj guides typically speak Bangla.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I request a private guide?</div>
+          <div class="answer">Private guides are generally not available as guides are assigned to groups to ensure smooth coordination and safety.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I select specific guide group or can I change to another group?</div>
+          <div class="answer">Generally, guide groups are assigned based on package and availability, and selecting a specific guide group or changing groups during Hajj is not allowed.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What help a guide can do in Hajj?</div>
+          <div class="answer">A guide can provide instructions and guidance on how to correctly perform the Hajj rituals. However, the guide does not have any responsibility or access to assist with food, transportation, or accommodation arrangements.</div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Common Question</h3>
+        <div class="faq-item">
+          <div class="question" tabindex="0">What vaccinations are required for Hajj?</div>
+          <div class="answer">Meningitis vaccination (A, C, W, Y strains) is mandatory.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can women travel alone for Hajj?</div>
+          <div class="answer">Yes, women can perform Hajj without a male guardian (mahram) under Saudi Arabia's current rules—but it’s recommended they travel in organized, trustworthy groups.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Will I get any Hajj lesson or training?</div>
+          <div class="answer">You will join a dedicated Hajj group for training and updates.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Is Qurbani included in the package? If not, what is the cost of Qurbani?</div>
+          <div class="answer">Qurbani not included in the package. Estimated cost will be provided soon.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Are Hajj equipment such as Ihram, belt, and other essentials included in the package?</div>
+          <div class="answer">No, these are not included, you have to buy it separately?</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I extend my stay in Saudi Arabia after Hajj?</div>
+          <div class="answer">No, extension of stay is not allowed. All pilgrims must return as per the group’s scheduled itinerary.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" tabindex="0">Can I use my mobile phone during Hajj?</div>
+          <div class="answer">Yes, you can use your mobile phone during Hajj. However, it's advised to use it responsibly and avoid distractions during rituals. Also, ensure you have international roaming or a local SIM card for connectivity.</div>
+        </div>
       </div>
     </div>
-  </div>
 
+    <!-- Link to the external script -->
+    <script src="./assets/script.js"></script>
 
-  <div class="section">
-    <h3>Package Selection, Payment & Visa</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How to select package for hajj, and who will help to do?</div>
-      <div class="answer">Package selection is done through the Nusuk portal, an official online platform for Hajj bookings. Our dedicated IT team will assist you throughout the package selection process to help find the best available options. <br> <br>
-                          Please note that while our team will make every effort to secure a suitable package for you, availability depends on the Nusuk system, and we cannot guarantee a specific package until the booking is confirmed.
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can packages be customized?</div>
-      <div class="answer">Generally, Hajj packages come as fixed options set by the operators or the Nusuk system. Therefore, packages are not customizable.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How do I add money (top-up) in the Nusuk portal for selecting a package?</div>
-      <div class="answer">You need to add money or top-up your balance through the Nusuk portal. If you require assistance, our dedicated IT team is available to guide you through the process step-by-step.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How much I have to add money (top-up)?</div>
-      <div class="answer">You must add the full cost of the selected Hajj package plus an additional 5% into their Nusuk e-wallet as a top-up.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">I don’t have card to add (top-up) money? Can I use my family member card?</div>
-      <div class="answer">Yes, you can. The same card will be use for refunding money, if your hajj is not confirmed.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">I only have cash. Would it be possible for you to pay with your card on my behalf? I’ll give you the cash.</div>
-      <div class="answer">No, you have to do it yourself.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Does the travel agency guarantee Hajj visas?</div>
-      <div class="answer">No, travel agencies cannot guarantee the issuance of Hajj visas.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What happens if the visa is denied or delayed?</div>
-      <div class="answer">If your visa is denied or delayed, you won’t be able to proceed with Hajj until the visa is confirmed. In the event of a visa rejection, a refund will be issued according to the refund policies set by the Saudi Hajj Ministry.</div>
-    </div>
-  </div>
-
-
-  <div class="section">
-    <h3>Flight Details</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Which airlines operate Hajj flights from the Bangladesh?</div>
-      <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I choose my own flight dates or times?</div>
-      <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h3>Hotel Details</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What types of hotels are offered during Hajj packages? Are they near to Haram?</div>
-      <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How do hotel standards differ for UK vs Bangladesh packages?</div>
-      <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-  </div>
-
-
-  <div class="section">
-    <h3>Hajj Guide</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Will there be a qualified Hajj guide accompanying the group?</div>
-      <div class="answer">Yes, a qualified and experienced Hajj guide will accompany the group throughout the pilgrimage to provide religious guidance, support, and help with rituals, ensuring a smooth and spiritually fulfilling experience.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What languages do the guides speak?</div>
-      <div class="answer">Our Hajj guides typically speak English. Additionally, depending on the group’s composition, the guide may speak your native language—such as Bengali—if it matches your country, to provide better assistance.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I request a private guide?</div>
-      <div class="answer">Private guides are generally not available as guides are assigned to groups to ensure smooth coordination and safety.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I select specific guide group or can I change to another group?</div>
-      <div class="answer">Generally, guide groups are assigned based on package and availability, and selecting a specific guide group or changing groups during Hajj is not allowed.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What help a guide can do in Hajj?</div>
-      <div class="answer">A guide can provide instructions and guidance on how to correctly perform the Hajj rituals. However, the guide does not have any responsibility or access to assist with food, transportation, or accommodation arrangements.</div>
-    </div>
-  </div>
-
-
-  <div class="section">
-    <h3>Common Question</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What vaccinations are required for Hajj?</div>
-      <div class="answer">Meningitis vaccination (A, C, W, Y strains) is mandatory.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can women travel alone for Hajj?</div>
-      <div class="answer">Yes, women can perform Hajj without a male guardian (mahram) under Saudi Arabia's current rules—but it’s recommended they travel in organized, trustworthy groups.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Will I get any Hajj lesson or training?</div>
-      <div class="answer">You will join a dedicated Hajj group for training and updates.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Is Qurbani included in the package? If not, what is the cost of Qurbani?</div>
-      <div class="answer">Qurbani not included in the package. Estimated cost is £175 for a goat and £200+ for a sheep. Assistance in arranging the sacrifice will be provided.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Are Hajj equipment such as Ihram, belt, and other essentials included in the package?</div>
-      <div class="answer">No, these are not included, you have to buy it separately?</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I extend my stay in Saudi Arabia after Hajj?</div>
-      <div class="answer">No, extension of stay is not allowed. All pilgrims must return as per the group’s scheduled itinerary.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I use my mobile phone during Hajj?</div>
-      <div class="answer">Yes, you can use your mobile phone during Hajj. However, it's advised to use it responsibly and avoid distractions during rituals. Also, ensure you have international roaming or a local SIM card for connectivity.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I use a different passport to apply for Hajj visa if I have dual nationality?</div>
-      <div class="answer">Generally, yes. However, you must apply through the country of the passport you choose, and follow that country’s Hajj quota and regulations.</div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="tab2" class="tab-content" role="tabpanel" aria-labelledby="tab2">
-  <div class="section">
-    <h3>Initial Booking</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What is the earliest time I can book my Hajj package from the Bangladesh?</div>
-      <div class="answer">We already started our initial booking. You can do it as soon as possible.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What is the deadline of Hajj booking from Bangladesh?</div>
-      <div class="answer">The deadline of Hajj booking from Bangladesh is <b>12th September, 2025</b></div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How can I book Hajj & what is the process?</div>
-      <div class="answer">1. Complete the booking form using the link: 🔗<a href="https://forms.gle/wwXUFQ2C3kURhD859" target="_blank"> Click to Register Here</a> <br>
-                          2. Send a clear scan or photo of your valid Bangladeshi Passport / National ID Card / Bangladeshi Birth Certificate / UK Passport via WhatsApp (scanned copy preferred). <br>
-                          3. Send a recent passport-size photograph via WhatsApp. <br>
-                          4. Provide A Valid Bangladeshi Mobile Phone Number
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Is there a deposit required for initial booking? How much?</div>
-      <div class="answer">Yes, A non-refundable 30,000 TAKA are required for initial booking.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Does receiving initial booking confirmation guarantee my place for Hajj?</div>
-      <div class="answer">No. only confirmation of Visa will guarantee your place for Hajj.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I go Hajj by Bangladeshi passport from UK?</div>
-      <div class="answer">There are some doubts about the option. Once final instruction will come from Saudi Hajj Ministry, we will Give you update</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">I am intended to go Hajj from Bangladesh, I don’t have Bangladeshi Passport, what can I do?</div>
-      <div class="answer">You can do your initial booking by (Bangladeshi Passport / National ID Card / Bangladeshi Birth Certificate / UK Passport) any document. As the Bangladeshi passport is mandatory to go Hajj from Bangladesh. We will suggest, please apply for it as soon as possible.</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h3>Package & Price</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How much does a typical Hajj package cost from the Bangladesh?</div>
-      <div class="answer">Costs vary widely depending on the package type. The approximate package price is below. The price is subject to change.
-        <br><br>
-        1. Economy: 650000 BD TK <br>
-        2. Standard: 750000 BD TK <br>
-        3. Deluxe: 800000 BD TK <br>
-        4. Luxury: 750000 BD TK <br>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="section">
-    <h3>Package Selection, Payment & Visa</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can packages be customized?</div>
-      <div class="answer">Packages are not customizable.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Does the travel agency guarantee Hajj visas?</div>
-      <div class="answer">No, travel agencies cannot guarantee the issuance of Hajj visas.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What happens if the visa is denied or delayed?</div>
-      <div class="answer">If your visa is denied or delayed, you won’t be able to proceed with Hajj until the visa is confirmed. In the event of a visa rejection, a refund will be issued according to the refund policies set by the Saudi Hajj Ministry.</div>
-    </div>
-  </div>
-
-
-  <div class="section">
-    <h3>Flight Details</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Which airlines operate Hajj flights from the UK?</div>
-      <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I choose my own flight dates or times?</div>
-      <div class="answer">The final Hajj Flight details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h3>Hotel Details</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What types of hotels are offered during Hajj packages? Are they near to Haram?</div>
-      <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">How do hotel standards differ for UK vs Bangladesh packages?</div>
-      <div class="answer">The final Hajj details is subject to approval and updates from the Saudi Hajj Ministry.</div>
-    </div>
-  </div>
-
-
-  <div class="section">
-    <h3>Hajj Guide</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Will there be a qualified Hajj guide accompanying the group?</div>
-      <div class="answer">Yes, a qualified and experienced Hajj guide will accompany the group throughout the pilgrimage to provide religious guidance, support, and help with rituals, ensuring a smooth and spiritually fulfilling experience.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What languages do the guides speak?</div>
-      <div class="answer">Our Hajj guides typically speak Bangla.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I request a private guide?</div>
-      <div class="answer">Private guides are generally not available as guides are assigned to groups to ensure smooth coordination and safety.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I select specific guide group or can I change to another group?</div>
-      <div class="answer">Generally, guide groups are assigned based on package and availability, and selecting a specific guide group or changing groups during Hajj is not allowed.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What help a guide can do in Hajj?</div>
-      <div class="answer">A guide can provide instructions and guidance on how to correctly perform the Hajj rituals. However, the guide does not have any responsibility or access to assist with food, transportation, or accommodation arrangements.</div>
-    </div>
-  </div>
-
-
-  <div class="section">
-    <h3>Common Question</h3>
-    <div class="faq-item">
-      <div class="question" tabindex="0">What vaccinations are required for Hajj?</div>
-      <div class="answer">Meningitis vaccination (A, C, W, Y strains) is mandatory.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can women travel alone for Hajj?</div>
-      <div class="answer">Yes, women can perform Hajj without a male guardian (mahram) under Saudi Arabia's current rules—but it’s recommended they travel in organized, trustworthy groups.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Will I get any Hajj lesson or training?</div>
-      <div class="answer">You will join a dedicated Hajj group for training and updates.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Is Qurbani included in the package? If not, what is the cost of Qurbani?</div>
-      <div class="answer">Qurbani not included in the package. Estimated cost will be provided soon.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Are Hajj equipment such as Ihram, belt, and other essentials included in the package?</div>
-      <div class="answer">No, these are not included, you have to buy it separately?</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I extend my stay in Saudi Arabia after Hajj?</div>
-      <div class="answer">No, extension of stay is not allowed. All pilgrims must return as per the group’s scheduled itinerary.</div>
-    </div>
-    <div class="faq-item">
-      <div class="question" tabindex="0">Can I use my mobile phone during Hajj?</div>
-      <div class="answer">Yes, you can use your mobile phone during Hajj. However, it's advised to use it responsibly and avoid distractions during rituals. Also, ensure you have international roaming or a local SIM card for connectivity.</div>
-    </div>
-  </div>
-</div>
-
-<script>
-  // Tab switching logic
-  const tabButtons = document.querySelectorAll('.tab-buttons button');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const target = button.getAttribute('data-tab');
-
-      // Update tab button active state + ARIA attributes
-      tabButtons.forEach(btn => {
-        btn.classList.remove('active');
-        btn.setAttribute('aria-selected', 'false');
-      });
-      button.classList.add('active');
-      button.setAttribute('aria-selected', 'true');
-
-      // Show/hide tab contents
-      tabContents.forEach(content => {
-        if (content.id === target) {
-          content.classList.add('active');
-        } else {
-          content.classList.remove('active');
-        }
-      });
-    });
-  });
-
-  // Toggle answers on question click or Enter key
-  const questions = document.querySelectorAll('.question');
-  questions.forEach(q => {
-    q.addEventListener('click', () => {
-      const faqItem = q.parentElement;
-      faqItem.classList.toggle('open');
-    });
-    q.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        q.click();
-      }
-    });
-  });
-</script>
-
-</body>
+  </body>
 </html>
